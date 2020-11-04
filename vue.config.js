@@ -8,7 +8,7 @@ module.exports = {
                 changeOrigin: true,
                 pathRewrite: p => {
                     console.log(p);
-                    r = p.replace(/^\/postal\/*/, '?zipcode=');
+                    var r = p.replace(/^\/postal\/*/, '?zipcode=');
                     console.log("result:" + r);
                     return r;
                 },
