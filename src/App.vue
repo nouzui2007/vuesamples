@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="ようこそ Vue.js App" detail_msg="こんな感じです" />
+    <Postal />
+    <Basic />
+    <CoinCalculator />
+    <BuefySample />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import Postal from "./components/Postal.vue";
+import Basic from "./components/Basic.vue";
+import CoinCalculator from "./components/CoinCalculator.vue";
+import BuefySample from "./components/BuefySample.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    Postal,
+    Basic,
+    CoinCalculator,
+    BuefySample,
+  },
+};
 </script>
 
 <style>
